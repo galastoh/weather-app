@@ -1,8 +1,9 @@
+from config import API_KEY
 import os
 import requests
 
 BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
-API_KEY = os.getenv('OPENWEATHER_API_KEY', '4c9de15091549573bf6287df35965b98')
+API_KEY = os.getenv('OPENWEATHER_API_KEY', API_KEY)
 city = 'Nairobi'
 params = {
     'q': city,
